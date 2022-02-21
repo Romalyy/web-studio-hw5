@@ -112,6 +112,7 @@ ul {
   text-decoration: none;
 
   transition: color var(--animation);
+  transition-property: color;
 }
 
 .site-nav .link.current {
@@ -541,6 +542,7 @@ ul {
   background-color: #ffffff;
 
   transition: background-color var(--animation);
+  transition-property: background-color;
 }
 
 .socials-link {
@@ -611,6 +613,7 @@ ul {
   fill: #afb1b8;
 
   transition: fill var(--animation), border var(--animation);
+  transition-property: fill, border;
 }
 
 .client-item:hover,
@@ -762,6 +765,7 @@ ul {
   box-sizing: border-box;
 
   transition: background-color var(--animation), fill var(--animation);
+  transition-property: background-color, fill;
 }
 
 .socials-link-footer {
@@ -820,6 +824,7 @@ ul {
   cursor: pointer;
 
   transition: color var(--animation), background-color var(--animation);
+  transition-property: color, background-color;
 }
 
 .second-type-button {
@@ -926,10 +931,12 @@ ul {
 
 .street {
   transition: color var(--animation);
+  transition-property: color;
 }
 
 .info {
   transition: color var(--animation);
+  transition-property: color;
 }
 
 .secong-footer-bg {
@@ -973,5 +980,6 @@ ul {
   background-color: #2196f3;
 
   transition: top var(--animation);
+  transition-property: top;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
