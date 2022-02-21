@@ -36,6 +36,9 @@ img {
 }
 
 .header {
+  display: flex;
+  align-items: center;
+
   border-bottom: 1px solid #ececec;
 }
 
@@ -63,7 +66,7 @@ ul {
 /* Site nav */
 .site-nav .link,
 .auth-nav .link {
-  display: inline-block;
+  display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -81,6 +84,7 @@ ul {
 .site-nav,
 .auth-nav {
   display: flex;
+  align-items: center;
   padding: 0;
   margin: 0;
   letter-spacing: 0.02em;
@@ -102,6 +106,9 @@ ul {
 
 .site-nav .link,
 .auth-nav .link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
 
   transition: color var(--animation);
@@ -246,6 +253,7 @@ ul {
 
 .backdrop {
   position: fixed;
+
   top: 0;
   left: 0;
   width: 100%;
@@ -265,6 +273,7 @@ ul {
   background-color: #fff;
 
   position: relative;
+
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -712,20 +721,24 @@ ul {
   margin-right: 10px;
 }
 
+.second-container {
+  margin-left: 70px;
+}
+
 .icons-footer {
   display: flex;
   flex-direction: row;
   align-items: baseline;
 
   margin: 0;
-  margin-left: 156px;
+
   padding: 0;
 }
 
 .footer-item {
   color: #ffffff;
   margin: 0;
-  margin-left: 156px;
+
   margin-bottom: 20px;
   font-size: 14px;
   line-height: 1, 14;
@@ -761,7 +774,7 @@ ul {
 }
 
 .team-icon-footer {
-  fill: #afb1b8;
+  fill: #ffffff;
 }
 
 .socials-link-footer:hover .team-icon-footer,
@@ -876,7 +889,6 @@ ul {
 
 .flex-link:hover,
 .flex-link:focus {
-  background-color: #ffffff;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
