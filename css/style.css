@@ -149,7 +149,6 @@ ul {
   justify-content: center;
   margin: 0;
   padding: 0;
-  fill: #757575;
   color: #757575;
 }
 
@@ -164,6 +163,9 @@ ul {
   height: 12px;
   fill: #757575;
   cursor: pointer;
+
+  transition: fill var(--animation);
+  transition-property: fill;
 }
 
 .test-icon:hover .test-icon:focus {
@@ -195,21 +197,12 @@ ul {
   height: 4px;
   border-radius: 2px;
 
-  /* background-color: #2196f3; */
+  background-color: #2196f3;
 }
 
 .link-animation:hover::after {
   background-color: #2196f3;
 }
-
-.link-animation:hover::after.current {
-  color: var(--accent-color);
-}
-
-/* .link-animation:hover::after{
-  background-color: #2196f3;
-  background-color: currentColor;
-} */
 
 /* hero */
 .hero-container {
@@ -261,6 +254,9 @@ ul {
   height: 100%;
 
   background-color: rgba(0, 0, 0, 0.2);
+
+  opacity: 1;
+  transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
@@ -453,7 +449,6 @@ ul {
   position: absolute;
   bottom: 0px;
   margin: 0;
-  position: -14px;
   width: 370px;
   height: 70px;
 
@@ -566,6 +561,9 @@ ul {
 
 .team-icon {
   fill: #afb1b8;
+
+  transition: fill var(--animation);
+  transition-property: fill;
 }
 
 .socials-link:hover .team-icon,
@@ -779,6 +777,9 @@ ul {
 
 .team-icon-footer {
   fill: #ffffff;
+
+  transition: fill var(--animation);
+  transition-property: fill;
 }
 
 .socials-link-footer:hover .team-icon-footer,
@@ -842,6 +843,7 @@ ul {
 
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .projects {
