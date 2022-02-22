@@ -378,10 +378,7 @@ textarea {
   padding-left: 30px
 
 }
-/* 
-.label-comment{
-  /* margin-top: 100px; */
-}
+
 
 .label-policy{
   display: flex;
@@ -841,8 +838,7 @@ margin-left: 0;
   text-transform: uppercase;
 }
 
-.socials-link-footer {
-}
+
 
 .socials-link-footer {
   display: flex;
@@ -876,7 +872,7 @@ margin-left: 0;
 
 .socials-link-footer:hover .team-icon-footer,
 .team-icon-footer:focus {
-  fill: #ffffff;
+  color: #ffffff;
 }
 
 /* Стили для portfolio */
@@ -974,6 +970,7 @@ margin-left: 0;
   box-sizing: border-box;
 }
 
+
 .flex-element:nth-child(3n) {
   margin-right: 0;
 }
@@ -983,28 +980,34 @@ margin-left: 0;
 }
 
 .flex-link {
-  
-  display: inline-block;
+  position: relative;
+  display: block;
   color: #ffffff;
   margin: 0;
   padding: 0;
   text-decoration: none;
+
 }
 
 .flex-link:hover, 
 .flex-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+
+
 }
 
 .information {
-
+  display: flex;
+  flex-direction: column;
   padding: 20px 24px;
   background-color: #ffffff;
   border: 1px solid #eeeeee;
   border-top: 0;
   box-sizing: border-box;
 }
+
+
 
 .site-name {
   font-weight: 400;
@@ -1056,7 +1059,7 @@ margin-left: 0;
   margin: 0 auto;
 }
 
-.flex-animation:hover .text-animation {
+.flex-link:hover .text-animation {
   top: 0;
 }
 
@@ -1082,12 +1085,4 @@ margin-left: 0;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.test-anamations{
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
-  margin: 0 auto;
-}
